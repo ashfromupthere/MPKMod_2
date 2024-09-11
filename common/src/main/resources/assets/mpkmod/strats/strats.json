@@ -138,7 +138,7 @@
       "default": "HH",
       "x!=1": " {x}t",
       "a=1": " Max FMM",
-      "a=!1": " FMM{f}t
+      "a=!1": " FMM{f}t"
     },
     "timingEntries": [
       "x{1,}:W!P",
