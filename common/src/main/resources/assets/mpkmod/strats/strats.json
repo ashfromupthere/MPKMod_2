@@ -76,6 +76,76 @@
       "WPJ"
     ]
   },
+    "nsjam": {
+    "format": {
+      "default": "No Sprint Jam"
+    },
+    "timingEntries": [
+      "W!PJ"
+    ]
+  },
+  "wajam": {
+    "format": {
+      "default": "Jam WA"
+    },
+    "timingEntries": [
+      "WAPJ"
+    ]
+  },
+  "wdjam": {
+    "format": {
+      "default": "Jam WD"
+    },
+    "timingEntries": [
+      "WDPJ"
+    ]
+  },
+  "hhwa": {
+    "format": {
+      "default": "WA HH ",
+      "x!=1": " {x}t",
+      "x_ms": " ({x_ms}ms}"
+    },
+    "timingEntries": [
+      "x{1,}:WAP",
+      "WAPJ"
+    ]
+  },
+  "hhwd": {
+    "format": {
+      "default": "WD HH ",
+      "x!=1": " {x}t",
+      "x_ms": " ({x_ms}ms}"
+    },
+    "timingEntries": [
+      "x{1,}:WDP",
+      "WDPJ"
+    ]
+  },
+  "nshh": {
+    "format": {
+      "default": "No Sprint HH",
+      "x!=1": " {x}t",
+      "x_ms": " ({x_ms}ms}"
+    },
+    "timingEntries": [
+      "x{1,}:W!P",
+      "WJ!P"
+    ]
+  },
+  "hhfmm": {
+    "format": {
+      "default": "HH",
+      "x!=1": " {x}t",
+      "a=1": " Max FMM",
+      "a=!1": " FMM{f}t
+    },
+    "timingEntries": [
+      "x{1,}:W!P",
+      "a:W!G",
+      "WP!G"
+    ]
+  },
   "bwjam": {
     "format": {
       "default": "BWJam"
