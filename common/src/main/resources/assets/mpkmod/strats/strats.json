@@ -32,31 +32,61 @@
     "wafmm": {
     "format": {
       "a==1": "Max ",
-      "default": "FMM",
+      "default": "FMM WA",
       "a!=1": " {a}t",
       "a_ms": " ({a_ms}ms)"
     },
     "timingEntries": [
-      "a{1,1}:WJ",
-      "a:W!G",
-      "WP!G"
+      "a{1,1}:WAJ",
+      "a:WA!G",
+      "WAP!G"
     ]
   },
-  "c4.5": {
+      "wdfmm": {
     "format": {
       "a==1": "Max ",
-      "default": "c4.5",
+      "default": "FMM WD",
+      "a!=1": " {a}t",
+      "a_ms": " ({a_ms}ms)"
+    },
+    "timingEntries": [
+      "a{1,1}:WDJ",
+      "a:WD!G",
+      "WDP!G"
+    ]
+  },
+  "wac4.5": {
+    "format": {
+      "a==1": "Max ",
+      "default": "c4.5 WA",
       "a!=1&&a!=5": " {a}t",
       "a_ms": " ({a_ms}ms)",
       "r!=1": " Run {r}t"
     },
     "timingEntries": [
-      "a{1,1}:WJ",
-      "a:W!G",
-      "b:WP!G",
-      "WPG",
-      "r{1,}:WPG",
-      "WPJ"
+      "a{1,1}:WAJ",
+      "a:WA!G",
+      "b:WAP!G",
+      "WAPG",
+      "r{1,}:WAPG",
+      "WAPJ"
+    ]
+  },
+    "wdc4.5": {
+    "format": {
+      "a==1": "Max ",
+      "default": "c4.5 WD",
+      "a!=1&&a!=5": " {a}t",
+      "a_ms": " ({a_ms}ms)",
+      "r!=1": " Run {r}t"
+    },
+    "timingEntries": [
+      "a{1,1}:WDJ",
+      "a:WD!G",
+      "b:WDP!G",
+      "WDPG",
+      "r{1,}:WDPG",
+      "WDPJ"
     ]
   },
   "pessi": {
@@ -72,6 +102,32 @@
       "WP!G"
     ]
   },
+    "wapessi": {
+    "format": {
+      "a==1": "Max ",
+      "default": "Pessi WA",
+      "a!=1": " -{a}t",
+      "a_ms": " ({a_ms}ms}"
+    },
+    "timingEntries": [
+      "a{1,1}:J",
+      "a:!G",
+      "WAP!G"
+    ]
+  },
+    "wdpessi": {
+    "format": {
+      "a==1": "Max ",
+      "default": "Pessi WD",
+      "a!=1": " -{a}t",
+      "a_ms": " ({a_ms}ms}"
+    },
+    "timingEntries": [
+      "a{1,1}:J",
+      "a:!G",
+      "WDP!G"
+    ]
+  },
   "a7hh": {
     "format": {
       "default": "A7HH"
@@ -80,6 +136,26 @@
       "a{1,1}:J",
       "a:!G",
       "WPG"
+    ]
+  },
+    "waa7hh": {
+    "format": {
+      "default": "A7HH WA"
+    },
+    "timingEntries": [
+      "a{1,1}:J",
+      "a:!G",
+      "WAPG"
+    ]
+  },
+    "wda7hh": {
+    "format": {
+      "default": "A7HH WD"
+    },
+    "timingEntries": [
+      "a{1,1}:J",
+      "a:!G",
+      "WDPG"
     ]
   },
   "panefmm": {
@@ -130,7 +206,7 @@
       "WDPJ"
     ]
   },
-  "hhwa": {
+  "wahh": {
     "format": {
       "default": "HH WA",
       "x!=1": " {x}t",
@@ -141,7 +217,7 @@
       "WAPJ"
     ]
   },
-  "hhwd": {
+  "wdhh": {
     "format": {
       "default": "HH WD",
       "x!=1": " {x}t",
@@ -165,15 +241,34 @@
   },
   "hhfmm": {
     "format": {
-      "default": "HH",
+      "default": "Walk",
       "x!=1": " {x}t",
-      "a=1": " Max FMM",
-      "a=!1": " FMM{f}t"
+      "a==1": " Max FMM",
+      "a!=1": " FMM{a}t"
     },
     "timingEntries": [
-      "x{1,}:W!P",
+      "x{1,}:W",
+      "WJ",
       "a:W!G",
       "WP!G"
+    ]
+  },
+    "hhc4.5": {
+    "format": {
+      "default": "Walk",
+      "x!=1": " {x}t",
+      "a==1": " Max c4.5",
+      "a!=1": " c4.5 {f}t"
+      "r!=1": " Run {r}t"
+    },
+    "timingEntries": [
+      "x{1,}:W",
+      "WJ",
+      "a:W!G",
+      "WP!G",
+      "WPG",
+      "r{1,}:WPG",
+      "WPJ"
     ]
   },
   "bwjam": {
