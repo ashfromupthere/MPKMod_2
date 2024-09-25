@@ -86,7 +86,7 @@
   },
   "wajam": {
     "format": {
-      "default": "Jam WA"
+      "default": "WA Jam"
     },
     "timingEntries": [
       "WAPJ"
@@ -94,7 +94,7 @@
   },
   "wdjam": {
     "format": {
-      "default": "Jam WD"
+      "default": "WD Jam"
     },
     "timingEntries": [
       "WDPJ"
