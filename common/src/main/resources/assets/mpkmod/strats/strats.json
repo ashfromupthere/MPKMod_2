@@ -12,7 +12,7 @@
       "WP!G"
     ]
   },
-    "wafmm": {
+  "wafmm": {
     "format": {
       "a==1": "Max ",
       "default": "FMM WA",
@@ -25,7 +25,7 @@
       "WAP!G"
     ]
   },
-      "wdfmm": {
+  "wdfmm": {
     "format": {
       "a==1": "Max ",
       "default": "FMM WD",
@@ -41,9 +41,9 @@
   "hhfmm": {
     "format": {
       "default": "Walk",
-      "x!=1": " {x}t",
+      "x!=0": " {x}t",
       "a==1": " Max FMM",
-      "a!=1": " FMM{a}t"
+      "a!=1": " FMM {a}t"
     },
     "timingEntries": [
       "x{1,}:W",
@@ -86,7 +86,7 @@
       "WAPJ"
     ]
   },
-    "wdc4.5": {
+  "wdc4.5": {
     "format": {
       "a==1": "Max ",
       "default": "c4.5 WD",
@@ -103,12 +103,12 @@
       "WDPJ"
     ]
   },
-    "hhc4.5": {
+  "hhc4.5": {
     "format": {
       "default": "Walk",
       "x!=1": " {x}t",
       "a==1": " Max c4.5",
-      "a!=1": " c4.5 {f}t"
+      "a!=1&&a!=5": " c4.5 {a}t",
       "r!=1": " Run {r}t"
     },
     "timingEntries": [
@@ -134,7 +134,7 @@
       "WP!G"
     ]
   },
-    "wapessi": {
+  "wapessi": {
     "format": {
       "a==1": "Max ",
       "default": "Pessi WA",
@@ -147,7 +147,7 @@
       "WAP!G"
     ]
   },
-    "wdpessi": {
+  "wdpessi": {
     "format": {
       "a==1": "Max ",
       "default": "Pessi WD",
@@ -170,7 +170,7 @@
       "WPG"
     ]
   },
-    "waa7hh": {
+  "waa7hh": {
     "format": {
       "default": "A7HH WA"
     },
@@ -180,7 +180,7 @@
       "WAPG"
     ]
   },
-    "wda7hh": {
+  "wda7hh": {
     "format": {
       "default": "A7HH WD"
     },
@@ -230,7 +230,7 @@
       "WDPJ"
     ]
   },
-    "nsjam": {
+  "nsjam": {
     "format": {
       "default": "No Sprint Jam"
     },
@@ -249,10 +249,10 @@
       "WJ!P"
     ]
   },
-    "nspessi": {
+  "nspessi": {
     "format": {
-      "a==1": "Max ",
       "default": "No Sprint Pessi",
+      "a==1": "Max ",
       "a!=1": " -{a}t",
       "a_ms": " ({a_ms}ms}"
     },
@@ -324,18 +324,6 @@
       "a:S!G",
       "SG",
       "w{1,}:SG",
-      "WPJ"
-    ]
-  },
-    "fencebwmm": {
-    "format": {
-      "default": "Fence BWMM",
-    },
-    "timingEntries": [
-      "{6,6}:SG",
-      "WAJ",
-      "WP!G",
-      "w{1,}:WP",
       "WPJ"
     ]
   },
