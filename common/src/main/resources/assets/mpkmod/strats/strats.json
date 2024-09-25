@@ -29,6 +29,36 @@
       "WPJ"
     ]
   },
+    "wafmm": {
+    "format": {
+      "a==1": "Max ",
+      "default": "FMM",
+      "a!=1": " {a}t",
+      "a_ms": " ({a_ms}ms)"
+    },
+    "timingEntries": [
+      "a{1,1}:WJ",
+      "a:W!G",
+      "WP!G"
+    ]
+  },
+  "c4.5": {
+    "format": {
+      "a==1": "Max ",
+      "default": "c4.5",
+      "a!=1&&a!=5": " {a}t",
+      "a_ms": " ({a_ms}ms)",
+      "r!=1": " Run {r}t"
+    },
+    "timingEntries": [
+      "a{1,1}:WJ",
+      "a:W!G",
+      "b:WP!G",
+      "WPG",
+      "r{1,}:WPG",
+      "WPJ"
+    ]
+  },
   "pessi": {
     "format": {
       "a==1": "Max ",
@@ -86,7 +116,7 @@
   },
   "wajam": {
     "format": {
-      "default": "WA Jam"
+      "default": "Jam WA"
     },
     "timingEntries": [
       "WAPJ"
@@ -94,7 +124,7 @@
   },
   "wdjam": {
     "format": {
-      "default": "WD Jam"
+      "default": "Jam WD"
     },
     "timingEntries": [
       "WDPJ"
@@ -102,7 +132,7 @@
   },
   "hhwa": {
     "format": {
-      "default": "WA HH ",
+      "default": "HH WA",
       "x!=1": " {x}t",
       "x_ms": " ({x_ms}ms}"
     },
@@ -113,7 +143,7 @@
   },
   "hhwd": {
     "format": {
-      "default": "WD HH ",
+      "default": "HH WD",
       "x!=1": " {x}t",
       "x_ms": " ({x_ms}ms}"
     },
