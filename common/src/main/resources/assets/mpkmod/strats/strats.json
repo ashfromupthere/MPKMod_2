@@ -249,6 +249,19 @@
       "WJ!P"
     ]
   },
+    "nspessi": {
+    "format": {
+      "a==1": "Max ",
+      "default": "No Sprint Pessi",
+      "a!=1": " -{a}t",
+      "a_ms": " ({a_ms}ms}"
+    },
+    "timingEntries": [
+      "a{1,1}:J",
+      "a:!G",
+      "W!G"
+    ]
+  },
   "hh": {
     "format": {
       "default": "HH",
