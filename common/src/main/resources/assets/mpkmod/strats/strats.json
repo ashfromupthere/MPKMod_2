@@ -12,23 +12,6 @@
       "WP!G"
     ]
   },
-  "c4.5": {
-    "format": {
-      "a==1": "Max ",
-      "default": "c4.5",
-      "a!=1&&a!=5": " {a}t",
-      "a_ms": " ({a_ms}ms)",
-      "r!=1": " Run {r}t"
-    },
-    "timingEntries": [
-      "a{1,1}:WJ",
-      "a:W!G",
-      "b:WP!G",
-      "WPG",
-      "r{1,}:WPG",
-      "WPJ"
-    ]
-  },
     "wafmm": {
     "format": {
       "a==1": "Max ",
@@ -53,6 +36,37 @@
       "a{1,1}:WDJ",
       "a:WD!G",
       "WDP!G"
+    ]
+  },
+  "hhfmm": {
+    "format": {
+      "default": "Walk",
+      "x!=1": " {x}t",
+      "a==1": " Max FMM",
+      "a!=1": " FMM{a}t"
+    },
+    "timingEntries": [
+      "x{1,}:W",
+      "WJ",
+      "a:W!G",
+      "WP!G"
+    ]
+  },
+  "c4.5": {
+    "format": {
+      "a==1": "Max ",
+      "default": "c4.5",
+      "a!=1&&a!=5": " {a}t",
+      "a_ms": " ({a_ms}ms)",
+      "r!=1": " Run {r}t"
+    },
+    "timingEntries": [
+      "a{1,1}:WJ",
+      "a:W!G",
+      "b:WP!G",
+      "WPG",
+      "r{1,}:WPG",
+      "WPJ"
     ]
   },
   "wac4.5": {
@@ -87,6 +101,24 @@
       "WDPG",
       "r{1,}:WDPG",
       "WDPJ"
+    ]
+  },
+    "hhc4.5": {
+    "format": {
+      "default": "Walk",
+      "x!=1": " {x}t",
+      "a==1": " Max c4.5",
+      "a!=1": " c4.5 {f}t"
+      "r!=1": " Run {r}t"
+    },
+    "timingEntries": [
+      "x{1,}:W",
+      "WJ",
+      "a:W!G",
+      "WP!G",
+      "WPG",
+      "r{1,}:WPG",
+      "WPJ"
     ]
   },
   "pessi": {
@@ -182,14 +214,6 @@
       "WPJ"
     ]
   },
-    "nsjam": {
-    "format": {
-      "default": "No Sprint Jam"
-    },
-    "timingEntries": [
-      "W!PJ"
-    ]
-  },
   "wajam": {
     "format": {
       "default": "Jam WA"
@@ -204,6 +228,36 @@
     },
     "timingEntries": [
       "WDPJ"
+    ]
+  },
+    "nsjam": {
+    "format": {
+      "default": "No Sprint Jam"
+    },
+    "timingEntries": [
+      "W!PJ"
+    ]
+  },
+  "nshh": {
+    "format": {
+      "default": "No Sprint HH",
+      "x!=1": " {x}t",
+      "x_ms": " ({x_ms}ms}"
+    },
+    "timingEntries": [
+      "x{1,}:W!P",
+      "WJ!P"
+    ]
+  },
+  "hh": {
+    "format": {
+      "default": "HH",
+      "x!=1": " {x}t",
+      "x_ms": " ({x_ms}ms}"
+    },
+    "timingEntries": [
+      "x{1,}:WP",
+      "WPJ"
     ]
   },
   "wahh": {
@@ -228,66 +282,12 @@
       "WDPJ"
     ]
   },
-  "nshh": {
-    "format": {
-      "default": "No Sprint HH",
-      "x!=1": " {x}t",
-      "x_ms": " ({x_ms}ms}"
-    },
-    "timingEntries": [
-      "x{1,}:W!P",
-      "WJ!P"
-    ]
-  },
-  "hhfmm": {
-    "format": {
-      "default": "Walk",
-      "x!=1": " {x}t",
-      "a==1": " Max FMM",
-      "a!=1": " FMM{a}t"
-    },
-    "timingEntries": [
-      "x{1,}:W",
-      "WJ",
-      "a:W!G",
-      "WP!G"
-    ]
-  },
-    "hhc4.5": {
-    "format": {
-      "default": "Walk",
-      "x!=1": " {x}t",
-      "a==1": " Max c4.5",
-      "a!=1": " c4.5 {f}t"
-      "r!=1": " Run {r}t"
-    },
-    "timingEntries": [
-      "x{1,}:W",
-      "WJ",
-      "a:W!G",
-      "WP!G",
-      "WPG",
-      "r{1,}:WPG",
-      "WPJ"
-    ]
-  },
   "bwjam": {
     "format": {
       "default": "BWJam"
     },
     "timingEntries": [
       "SJ"
-    ]
-  },
-  "hh": {
-    "format": {
-      "default": "HH",
-      "x!=1": " {x}t",
-      "x_ms": " ({x_ms}ms}"
-    },
-    "timingEntries": [
-      "x{1,}:WP",
-      "WPJ"
     ]
   },
   "bwhh": {
