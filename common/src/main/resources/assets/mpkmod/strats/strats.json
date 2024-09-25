@@ -251,9 +251,9 @@
   },
   "nspessi": {
     "format": {
-      "default": "No Sprint Pessi",
-      "a==1": "Max ",
-      "a!=1": " -{a}t",
+      "default": "No Sprint ",
+      "a==1": "Max Pessi",
+      "a!=1": " Pessi -{a}t",
       "a_ms": " ({a_ms}ms}"
     },
     "timingEntries": [
