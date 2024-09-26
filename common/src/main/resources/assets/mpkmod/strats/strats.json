@@ -236,7 +236,7 @@
       "default": "No Sprint Jam"
     },
     "timingEntries": [
-      "W!PJ"
+      "WJ"
     ]
   },
   "nshh": {
@@ -247,13 +247,13 @@
     },
     "timingEntries": [
       "x{1,}:W!P",
-      "WJ!P"
+      "WJ"
     ]
   },
   "nspessi": {
     "format": {
-      "default": "No Sprint ",
-      "a==1": "Max Pessi",
+      "default": "No Sprint",
+      "a==1": " Max Pessi",
       "a!=1": " Pessi -{a}t",
       "a_ms": " ({a_ms}ms}"
     },
