@@ -115,7 +115,7 @@
     "timingEntries": [
       "x{1,}:W",
       "WJ",
-      "a:W!G",
+      "a{1,}:W!G",
       "b:WP!G",
       "WPG",
       "r{1,}:WPG",
